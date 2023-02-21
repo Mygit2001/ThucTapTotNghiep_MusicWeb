@@ -23,13 +23,13 @@ export const loadingList = (flag) => ({
     type: actionTypes.LOADING,
     flag
 })
-// export const search = (keyword) => async (dispatch) => {
-//     try {
-//         const response = await apis.apiSearch(keyword)
-//     }catch(err) {
-//         dispatch({
-//             type : actionTypes.SEARCH,
+export const search = (keyword) => async (dispatch) => {
+    try {
+        const response = await apis.apiSearch(keyword)
+    }catch(err) {
+        dispatch({
+            type : actionTypes.SEARCH,
             
-//         })
-//     }
-// }
+        })
+    }
+}
