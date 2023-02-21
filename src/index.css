@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: url('https://media.istockphoto.com/id/1142534564/vector/futuristic-holographic-neon-background.jpg?s=612x612&w=0&k=20&c=6fYCzCu7A_vRnttXMK739RSEP54IUT-5HWtYTlq_syw=')
+      top right no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+}
