@@ -11,12 +11,12 @@ const Home = () => {
             ?
             <div className='overflow-y-auto w-full '>
                 <Slider />
-                {newEveryday && <SectionBlock data={newEveryday} className="w-[120px]"/>}
+                {<SectionBlock data={newEveryday} className="w-[120px]"/>}
                 {artist &&  <SectionBlock data = {artist} />}
                 <Catergory />
                 {top100 && <SectionBlock data={top100} className="" />}
             </div> 
-            : <div >abgd</div>
+            : <div className='w-full h-full flex items-center'><LoadingListSong /></div>
             }
         </>
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Slider, SectionBlock, Catergory} from '../../components'
 import { useSelector } from 'react-redux';
-import {LoadingListSong} from '../../components'
+import {Loading} from '../../components'
 const Home = () => {
     const {newEveryday, artist, top100} = useSelector(state => state.app)
     return (
@@ -16,7 +16,7 @@ const Home = () => {
                 <Catergory />
                 {top100 && <SectionBlock data={top100} className="" />}
             </div> 
-            : <div >abgd</div>
+            : <div>abc</div>
             }
         </>
     )

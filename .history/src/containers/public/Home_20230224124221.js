@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <>
             {
-            (newEveryday && artist && top100) 
+            (newEveryday || artist || top100) 
             ?
             <div className='overflow-y-auto w-full '>
                 <Slider />
@@ -16,7 +16,7 @@ const Home = () => {
                 <Catergory />
                 {top100 && <SectionBlock data={top100} className="" />}
             </div> 
-            : <div >abgd</div>
+            : <div className='w-full h-full flex ic'><LoadingListSong /></div>
             }
         </>
     )
