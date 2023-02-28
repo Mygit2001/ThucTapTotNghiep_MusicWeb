@@ -15,7 +15,9 @@ const Home = () => {
                 <Catergory />
                 {top100 && <SectionBlock data={top100} className="" />}
             </div> 
-            : <div >abc</div>
+            : <div >
+                <LoadingListSong />
+            </div>
             }
         </>
     )

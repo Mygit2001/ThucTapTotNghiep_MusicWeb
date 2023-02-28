@@ -7,8 +7,8 @@ import { Album, ArtistPage, Home, Login,Register, Personal, Public, Search, Sear
 import * as actions from './store/actions';
 import path from './ultis/path';
 
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
+// import firebase from 'firebase/compat/app';
+// import 'firebase/compat/auth';
 
 // Configure Firebase.
 // const config = {
