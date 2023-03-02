@@ -9,13 +9,14 @@ const SongItem = ({thumbnail, title, artistsName, sid, style, size}) => {
          onClick={() => {
             dispatch(actions.setCurSongId(sid));
             dispatch(actions.play(true));
+            dispatch(actions.setRecentSong({thumbnail, title, sid, artistsName}))
          }}
          >
             <div className="flex gap-4 " title={title}>
                 <img src={thumbnail} className={`${size || 'w-[60px] h-[60px] rounded-md'}`}/>
                 <div className="flex flex-col font-semibold " >
-                    <span className='text-base text-red-900 mb-1' >{title.length > 20 ? `${title.slice(0, 20)}...` : title}</span>
-                    <span className='text-xs text-red-700'>{artistsName.length > 20 ? `${artistsName.slice(0, 20)}...` : artistsName}</span>
+                    <span className='text-base text-red-900 mb-1' >{title?.length > 20 ? `${title.slice(0, 20)}...` : title}</span>
+                    <span className='text-xs text-red-700'>{artistsName?.length > 20 ? `${artistsName.slice(0, 20)}...` : artistsName}</span>
                 </div>
             </div>
         </div>

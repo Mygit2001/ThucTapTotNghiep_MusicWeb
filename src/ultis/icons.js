@@ -3,7 +3,7 @@ import { HiOutlineChartPie, HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-
 import { TbChartArcs, TbRepeatOnce } from 'react-icons/tb'
 import { AiOutlineArrowLeft, AiOutlineArrowRight, AiFillHeart, AiOutlineHeart, AiOutlineCloseCircle } from 'react-icons/ai'
 import { FiSearch, FiVolume2, FiVolumeX } from 'react-icons/fi'
-import { BsThreeDots, BsFillPlayFill, BsPauseFill, BsMusicNoteBeamed, BsDot } from 'react-icons/bs'
+import { BsThreeDots, BsFillPlayFill, BsPauseFill, BsMusicNoteBeamed, BsDot, BsMusicNoteList } from 'react-icons/bs'
 import { CiRepeat, CiShuffle} from 'react-icons/ci'
 import {RiCompassDiscoverFill} from 'react-icons/ri'
 import {FcBusinessman} from 'react-icons/fc'
@@ -35,7 +35,8 @@ const icons = {
     BsMusicNoteBeamed,
     BsDot,
     RiCompassDiscoverFill,
-    FcBusinessman
+    FcBusinessman,
+    BsMusicNoteList
 }
 
 export default icons

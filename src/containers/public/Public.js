@@ -6,6 +6,7 @@ import { Scrollbars } from "react-custom-scrollbars-2";
 const Public = () => {
     
   const {isLoadingListSong} = useSelector(state => state.app);
+  const [isShowRightSidebar, setIsShowRightSidebar] = useState(true)
   return (
     <div className="w-full relative h-screen flex flex-col bg-main-300">
       <div className="w-full h-full flex flex-auto">
@@ -25,12 +26,12 @@ const Public = () => {
             </Scrollbars>
           </div>
         </div>
-        <div className="w-[329px] 1600:flex flex-none border border-green-500 animate-slide-left ">
-          <SidebarRight />
-        </div>
+        {isShowRightSidebar && <div className="w-[329px] 1600:flex flex-none border h-screen border-green-500 animate-slide-left ">
+           <SidebarRight />
+        </div>}
       </div>
       <div className="fixed bottom-0 left-0 right-0 h-[90px] z-50">
-        <Player />
+        <Player setIsShowRightSidebar = {setIsShowRightSidebar}/>
       </div>
     </div>
   );

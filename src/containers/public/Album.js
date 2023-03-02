@@ -48,7 +48,7 @@ const Album = () => {
           </div>
         </div>
         <div className="flex flex-col items-center gap-1">
-          <h3 className="text-[20px] font-bold text-gray-800">
+          <h3 className="text-[20px] font-bold text-gray-800">  
             {playlistData?.title}
           </h3>
           <span className="flex gap-2 items-center text-gray-500 text-xs">

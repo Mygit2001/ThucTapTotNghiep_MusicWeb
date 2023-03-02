@@ -38,7 +38,7 @@ const Search = () => {
       <input
         type="text"
         className="outline-none px-4 bg-[#DDE4E4] py-2 w-[80%] rounded-r-[20px] h-10 text-gray-500"
-        placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát..."
+        placeholder="Tìm kiếm bài hát, nghệ sĩ,..."
         value={keyword}
         onChange={(e) => setkeyword(e.target.value)}
         onKeyUp={handleSearch}

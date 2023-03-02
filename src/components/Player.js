@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import * as apis from "../apis";
 import icons from "../ultis/icons";
+import {LoadingSong} from './'
 import * as actions from "../store/actions";
 import { toast } from "react-toastify";
 import moment from "moment";
@@ -17,10 +18,11 @@ const {
   CiShuffle,
   TbRepeatOnce,
   FiVolume2,
-  FiVolumeX
+  FiVolumeX,
+  BsMusicNoteList
 } = icons;
 var intervalId;
-const Player = () => {
+const Player = ({setIsShowRightSidebar}) => {
   // const audioEl = useRef(new Audio())
   const [audio, setAudio] = useState(new Audio());
   const { curSongId, isPlaying, songs } = useSelector((state) => state.music);
@@ -30,6 +32,7 @@ const Player = () => {
   const [repeatMode, setRepeatMode] = useState(0);
   const [volume, setVolume] = useState(100);
   const [isHoverVolume, setisHoverVolume] = useState(false);
+  const [isLoadingSong, setIsLoadingSong] = useState(false)
   // const [muted, setMuted] = useState(false);
   // const finalVolume = muted ? 0 : volume ** 2;
   const thumbRef = useRef();
@@ -39,10 +42,12 @@ const Player = () => {
 
   useEffect(() => {
     const fetchDetailSong = async () => {
+      setIsLoadingSong(false)
       const [res1, res2] = await Promise.all([
         apis.apiGetDetailSong(curSongId),
         apis.apiGetSong(curSongId),
       ]);
+      setIsLoadingSong(true)
       if (res1.data.err === 0) {
         setSongInfo(res1.data.data);
         dispatch(actions.setCurSongData(res1.data.data))
@@ -201,7 +206,7 @@ const Player = () => {
             className="p-1 border border-red-700 cursor-pointer hover:text-blue-500 rounded-full text-red-700 text-center"
             onClick={handleTogglePlayMusic}
           >
-            {isPlaying ? (
+            {!isLoadingSong ? <LoadingSong /> : isPlaying ? (
               <BsPauseFill size={30} />
             ) : (
               <BsFillPlayFill size={30} />
@@ -267,9 +272,13 @@ const Player = () => {
             className={`w-[130px] ${isHoverVolume ? 'inline-block' : 'hidden'}`}
           />
         </div>
-        {/* <button onClick={() => setMuted((m) => !m)}>
-          {muted ? "muted" : "unmuted"}
-        </button> */}
+        <span 
+        className='text-white p-1 rounded-md bg-orange-500 opacity-80 hover:opacity-100'
+        onClick={() => setIsShowRightSidebar(prev => !prev)}
+        >
+          <BsMusicNoteList />
+        </span>
+        
       </div>
     </div>
   );

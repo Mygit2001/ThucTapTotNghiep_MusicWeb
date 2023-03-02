@@ -31,4 +31,4 @@ const Lists = ({  totalDuration }) => {
     )
 }
 
-export default memo(Lists)
+    export default memo(Lists)

@@ -27,6 +27,10 @@ export const setCurAlbumId = (pid) => ({
     type: actionTypes.SET_CUR_ALBUM_ID,
     pid
 })
+export const setRecentSong = (data) => ({
+    type: actionTypes.SET_RECENT_SONG,
+    data
+})
 export const loadingList = (flag) => ({
     type: actionTypes.LOADING,
     flag

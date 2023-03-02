@@ -36,7 +36,7 @@ const Catergory = () => {
         </button>
       </div>
       <div className="flex flex-wrap gap-4">
-        {/* {cateSongs.map(item => (
+        {cateSongs?.map(item => (
           <SongItem 
           key={item.encodeId}
           thumbnail={item.thumbnail}
@@ -44,7 +44,7 @@ const Catergory = () => {
           artistsName={item.artistsNames}
           />    
         )
-        )} */}
+        )}
       </div>
     </div>
   );
