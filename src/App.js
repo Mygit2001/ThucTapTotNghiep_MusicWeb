@@ -10,10 +10,10 @@ import path from './ultis/path';
 // import firebase from 'firebase/compat/app';
 // import 'firebase/compat/auth';
 
-// Configure Firebase.
+// //Configure Firebase.
 // const config = {
-//   apiKey: 'AIzaSyBcrLRtVv7dbeGmUMKM419Oq5JpMqQC4jw',
-//   authDomain: 'reactappmusic.firebaseapp.com',
+//   apiKey: process.env.REACT_APP_FIREBASE_API_KEY ,
+//   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN ,
   
 // };
 // firebase.initializeApp(config)

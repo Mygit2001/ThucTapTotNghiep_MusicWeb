@@ -4,7 +4,7 @@ const path = {
     LOGIN: 'login',
     REGISTER: 'register',
     STAR: '*',
-    MY_MUSIC: 'mymusic',
+    MY_MUSIC: 'personal',
     ALBUM__TITLE__PID: 'album/:title/:pid',
     PLAYLIST__TITLE__PID: 'playlist/:title/:pid',
     SEARCH : 'tim-kiem',

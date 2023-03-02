@@ -2,16 +2,16 @@ import React from "react";
 import { InputForm } from "../../components";
 import path from '../../ultis/path'
 import { useNavigate, NavLink } from 'react-router-dom'
-// import firebase from 'firebase/compat/app'
-// import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
-// const uiConfig = {
-//   signInFlow: 'popup',
-//   signInSuccessUrl: '/register',
-//   signInOptions: [
-//     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-//     // firebase.auth.FacebookAuthProvider.PROVIDER_ID
-//   ],
-// };
+import firebase from 'firebase/compat/app'
+import 'firebase/compat/auth';
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+const uiConfig = {
+  signInFlow: 'redirect',
+  signInSuccessUrl: '/personal',
+  signInOptions: [
+    firebase?.auth?.GoogleAuthProvider?.PROVIDER_ID,
+  ],
+};
 const Login = () => {
   const navigate = useNavigate()
   return (
@@ -37,8 +37,9 @@ const Login = () => {
               Đăng kí
             </NavLink>
         </div>
+        <div><StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} /></div>
       </div>
-      {/* <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} /> */}
+      
     </div>
     
   );

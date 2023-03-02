@@ -81,15 +81,15 @@ const SidebarRight = () => {
               size="w-[50px] h-[50px] rounded-md"
             />
             <div className="flex flex-col text-black pt-[15px] px-2 pb-[5px]">
-              <span className="text-sm font-semibold">Tiếp theo</span>
               <span className="text-xs">
-                <span>Từ playlist : </span>
+                <span>Từ album : </span>
                 <span className="font-semibold text-red-900">
                   {curSongData?.album?.title.length > 25
                     ? `${curSongData?.album?.title.slice(0, 25)}...`
                     : curSongData?.album?.title}
                 </span>
               </span>
+              <span className="text-sm font-semibold">Tiếp theo</span>
             </div>
             {playlist && (
               <div className="flex flex-col">

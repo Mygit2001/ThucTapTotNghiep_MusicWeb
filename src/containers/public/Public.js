@@ -1,12 +1,15 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { useSelector } from "react-redux";
 import { Outlet } from "react-router-dom";
 import { Player, SidebarLeft, SidebarRight, Header, LoadingListSong } from "../../components";
 import { Scrollbars } from "react-custom-scrollbars-2";
+
 const Public = () => {
     
   const {isLoadingListSong} = useSelector(state => state.app);
+  const {curSongId} = useSelector(state => state.music);
   const [isShowRightSidebar, setIsShowRightSidebar] = useState(true)
+
   return (
     <div className="w-full relative h-screen flex flex-col bg-main-300">
       <div className="w-full h-full flex flex-auto">

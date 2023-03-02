@@ -2,10 +2,10 @@ import { MdOutlineLibraryMusic, MdOutlineFeed, MdSkipNext, MdSkipPrevious, MdOut
 import { HiOutlineChartPie, HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-icons/hi'
 import { TbChartArcs, TbRepeatOnce } from 'react-icons/tb'
 import { AiOutlineArrowLeft, AiOutlineArrowRight, AiFillHeart, AiOutlineHeart, AiOutlineCloseCircle } from 'react-icons/ai'
-import { FiSearch, FiVolume2, FiVolumeX } from 'react-icons/fi'
+import { FiSearch, FiVolume2, FiVolumeX, FiLogOut } from 'react-icons/fi'
 import { BsThreeDots, BsFillPlayFill, BsPauseFill, BsMusicNoteBeamed, BsDot, BsMusicNoteList } from 'react-icons/bs'
 import { CiRepeat, CiShuffle} from 'react-icons/ci'
-import {RiCompassDiscoverFill} from 'react-icons/ri'
+import {RiCompassDiscoverFill, RiVipLine} from 'react-icons/ri'
 import {FcBusinessman} from 'react-icons/fc'
 const icons = {
     MdOutlineLibraryMusic,
@@ -30,11 +30,13 @@ const icons = {
     CiShuffle,
     FiVolume2,
     FiVolumeX,
+    FiLogOut,
     BsFillPlayFill,
     BsPauseFill,
     BsMusicNoteBeamed,
     BsDot,
     RiCompassDiscoverFill,
+    RiVipLine,
     FcBusinessman,
     BsMusicNoteList
 }

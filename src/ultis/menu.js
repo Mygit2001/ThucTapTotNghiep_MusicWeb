@@ -1,11 +1,11 @@
 import icons from "./icons"
 
-const { MdOutlineLibraryMusic, MdOutlineFeed, TbChartArcs, HiOutlineChartPie, MdOutlineAlbum, MdOutlinePersonalInjury,RiCompassDiscoverFill, FcBusinessman } = icons
+const { MdOutlineLibraryMusic, MdOutlineFeed, TbChartArcs, HiOutlineChartPie, MdOutlineAlbum, MdOutlinePersonalInjury,RiCompassDiscoverFill, RiVipLine } = icons
 export const sidebarMenu = [
     {
-        path: 'mymusic',
-        text: 'Cá nhân',
-        icons: <FcBusinessman size={24} />
+        path: 'personal',
+        text: 'Nhạc VIP',
+        icons: <RiVipLine size={24} />
     },
     {
         path: '',
