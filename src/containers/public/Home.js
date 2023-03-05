@@ -13,7 +13,7 @@ const Home = () => {
                 {newEveryday && <SectionBlock data={newEveryday} className="w-[120px]"/>}
                 {artist &&  <SectionBlock data = {artist} />}
                 <Catergory />
-                {top100 && <SectionBlock data={top100} className="" />}
+                {top100 && <SectionBlock data={top100} />}
             </div> 
             : <div >
                 <LoadingListSong />

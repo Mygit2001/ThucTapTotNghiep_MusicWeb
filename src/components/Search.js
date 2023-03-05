@@ -27,7 +27,7 @@ const Search = () => {
       {keyword && (
         <span
           onClick={() => setkeyword("")}
-          className="absolute cursor-pointer right-[86px] text-gray-500"
+          className="absolute cursor-pointer right-[40px] text-gray-500"
         >
           <AiOutlineCloseCircle size={16} />
         </span>
@@ -37,7 +37,7 @@ const Search = () => {
       </span>
       <input
         type="text"
-        className="outline-none px-4 bg-[#DDE4E4] py-2 w-[80%] rounded-r-[20px] h-10 text-gray-500"
+        className="outline-none px-4 bg-[#DDE4E4] py-2 w-[90%] rounded-r-[20px] h-10 text-gray-500"
         placeholder="Tìm kiếm bài hát, nghệ sĩ,..."
         value={keyword}
         onChange={(e) => setkeyword(e.target.value)}

@@ -11,7 +11,8 @@ const path = {
     ALL : 'tat-ca',
     SONG : 'bai-hat',
     ALBUM__SEARCH: 'playlist',
-    ARTIST__PAGE : ':artist'
+    ARTIST__PAGE : ':artist',
+    BUY_ACCOUNT : ':account'
 }
 
 export default path

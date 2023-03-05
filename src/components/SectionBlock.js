@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 const SectionBlock = ({data}) => {
     const nav = useNavigate()   
     return (
-        <div className="mt-12 px-[59px] flex flex-col gap-5 mb-20">
+        <div className="mt-12 px-[59px] flex flex-col gap-5 mb-24">
             <div className="flex items-center justify-between">
                 <h3 className="text-[20px] font-bold">{data.title}</h3>
                 <span className="text-md font-semibold text-blue-700 cursor-pointer hover:text-blue-900">Tất cả</span>

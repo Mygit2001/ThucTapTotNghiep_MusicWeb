@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: verdana;
+        }
+        .wrap {
+            display:  flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .wrap_item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 294px;
+            height: 413px;
+            border-radius: 50px;
+            text-align: center;
+            padding: 20px 12px;
+            border: 1px solid #ccc;
+            background-color: rgb(241, 222, 222);
+        }
+        .wrap_item span {
+            font-size: 30px;
+            font-weight: bold;
+            color: blueviolet;
+        }
+        .wrap_item h4 {
+            font-size: 40px;
+            color: rgb(115, 38, 38);
+        }
+        .wrap_item input {
+            padding: 8px 16px;
+            background-color: rgb(124, 122, 98);
+            outline: none;
+            border: none;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size:  16px;
+        }
+        .wrap_item input:hover {
+            background-color: rgb(61, 61, 53);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="wrap_item">
+            <span >Gói VIP 1</span>
+            <h4>25.00 USD</h4>
+            <div className='flex'>
+                <form action="/pay" method='post'>
+                    <input type='submit' value='Mua gói' />
+                </form>
+            </div>
+        </div>
+        <div class="wrap_item">
+            <span >Gói VIP 2</span>
+            <h4>30.00 USD</h4>
+            <div className='flex'>
+                <form action="/pay" method='post'>
+                    <input type='submit' value='Mua gói' />
+                </form>
+            </div>
+        </div>
+        <div class="wrap_item">
+            <span >Gói VIP 3</span>
+            <h4>35.00 USD</h4>
+            <div className='flex'>
+                <form action="/pay" method='post'>
+                    <input type='submit' value='Mua gói' />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

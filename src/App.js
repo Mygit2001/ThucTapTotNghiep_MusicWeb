@@ -3,20 +3,9 @@ import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Album, ArtistPage, Home, Login,Register, Personal, Public, Search, SearchAlbum, SearchAllInfo, SearchSongs } from './containers/public/';
+import { Album, ArtistPage, Home, Login,Register, Personal, Public, Search, SearchAlbum, SearchAllInfo, SearchSongs, BuyAccount } from './containers/public/';
 import * as actions from './store/actions';
 import path from './ultis/path';
-
-// import firebase from 'firebase/compat/app';
-// import 'firebase/compat/auth';
-
-// //Configure Firebase.
-// const config = {
-//   apiKey: process.env.REACT_APP_FIREBASE_API_KEY ,
-//   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN ,
-  
-// };
-// firebase.initializeApp(config)
 
 function App() {
   const dispatch = useDispatch()
@@ -24,20 +13,6 @@ function App() {
     dispatch(actions.getHome())
   }, [])
 
-
-  // useEffect(() => {
-  //   const unregisterAuthObserver = firebase.auth().onAuthStateChanged( async (user) => {
-  //     if(!user) {
-  //       console.log('User is log out')
-  //       return 
-  //     }
-  //       console.log('dang nhap với ', user.displayName)
-  //       const token = await user.getIdToken()
-  //       console.log('dang nhap với user token ', user.token)
-
-  //   });
-  //   return () => unregisterAuthObserver(); // Make sure we un-register Firebase observers when the component unmounts.
-  // }, []);
 
   return (
     <>
@@ -50,8 +25,8 @@ function App() {
             <Route path={path.MY_MUSIC} element={<Personal />} />
             <Route path={path.ALBUM__TITLE__PID} element={<Album />} />
             <Route path={path.PLAYLIST__TITLE__PID} element={<Album />} />
+            <Route path={path.BUY_ACCOUNT} element={<BuyAccount />} />
             <Route path={path.ARTIST__PAGE} element={<ArtistPage />} />
-
             <Route path={path.SEARCH} element={<Search />} >
                <Route path={path.ALL} element={<SearchAllInfo />} />
                <Route path={path.SONG} element={<SearchSongs />} />

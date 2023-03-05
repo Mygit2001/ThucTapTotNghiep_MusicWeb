@@ -4,8 +4,10 @@ import * as apis from "../apis";
 import icons from "../ultis/icons";
 import {LoadingSong} from './'
 import * as actions from "../store/actions";
+import path from '../ultis/path'
 import { toast } from "react-toastify";
 import moment from "moment";
+import { useNavigate } from "react-router-dom";
 const {
   AiOutlineHeart,
   // AiFillHeart,
@@ -32,12 +34,13 @@ const Player = ({setIsShowRightSidebar}) => {
   const [repeatMode, setRepeatMode] = useState(0);
   const [volume, setVolume] = useState(100);
   const [isHoverVolume, setisHoverVolume] = useState(false);
-  const [isLoadingSong, setIsLoadingSong] = useState(false)
+  const [isLoadingSong, setIsLoadingSong] = useState(false);
   // const [muted, setMuted] = useState(false);
   // const finalVolume = muted ? 0 : volume ** 2;
   const thumbRef = useRef();
   const trackRef = useRef();
   const volumeRef = useRef();
+  const navigate = useNavigate()
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -55,13 +58,15 @@ const Player = ({setIsShowRightSidebar}) => {
       if (res2.data.err === 0) {
         audio.pause();
         setAudio(new Audio(res2.data.data["128"]));
-      } else {
+      } 
+      else {
         audio.pause();
         setAudio(new Audio());
         dispatch(actions.play(false));
         setCurrentSecond(0);
         // toast.warn(res2.data.msg);
-        toast.warn("Bài hát này chỉ dành cho tài khoản VIP !");
+        toast.warn("Bạn cần đăng nhập để nghe các bài hát VIP !");
+        navigate(path.BUY_ACCOUNT)
       }
     };
 
@@ -223,7 +228,7 @@ const Player = ({setIsShowRightSidebar}) => {
           </span>
           <span
             className={`cursor-pointer ${repeatMode && "text-red-900"}`}
-            title="Bật phát lại tất cả"
+            title="Bật phát lại 1 bài"
             onClick={() => setRepeatMode(prev => prev === 2 ? 0 : prev +1) } 
           >
             {repeatMode === 1 ? <TbRepeatOnce size={24} /> : <CiRepeat size={24} />}
