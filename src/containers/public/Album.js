@@ -48,10 +48,10 @@ const Album = () => {
           </div>
         </div>
         <div className="flex flex-col items-center gap-1">
-          <h3 className="text-[20px] font-bold text-gray-800">  
+          <h3 className="text-[20px] font-bold text-orange-400">  
             {playlistData?.title}
           </h3>
-          <span className="flex gap-2 items-center text-gray-500 text-xs">
+          <span className="flex gap-2 items-center text-orange-300 text-xs">
             <span>Cập nhật:</span>
             <span>
               {moment
@@ -59,18 +59,18 @@ const Album = () => {
                 .format("DD/MM/YYYY")}
             </span>
           </span>
-          <span className="flex gap-2 items-center text-gray-500 text-xs">
+          <span className="flex gap-2 items-center text-orange-300 text-xs">
             {playlistData?.artistsNames}
           </span>
-          <span className="flex gap-2 items-center text-gray-500 text-xs">{`${Math.round(
+          <span className="flex gap-2 items-center text-orange-300 text-xs">{`${Math.round(
             playlistData?.like / 1000
           )}K người yêu thích`}</span>
         </div>
       </div>
       <Scrollbars style={{ width: "100%", height: "80%" }}>
         <div className="flex-auto mb-40">
-          <span className="text-base my-4 text-sky-900">
-            <span className="text-gray-600">Lời tựa : </span>
+          <span className="text-base my-4 text-orange-300">
+            <span className="">Lời tựa : </span>
             <span>{playlistData?.sortDescription}</span>
           </span>
           <Lists

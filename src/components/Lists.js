@@ -11,7 +11,7 @@ const Lists = ({  totalDuration }) => {
     // console.log({ songs, totalDuration })
     const {songs} = useSelector(state => state.music)
     return (
-        <div className='w-full flex flex-col text-xs text-gray-600'>
+        <div className='w-full flex flex-col text-xs text-orange-300'>
             {totalDuration && <div className=' flex justify-between items-center p-[10px] font-bold '>
                 <span>BÀI HÁT</span>
                 <span>ALBUM</span>

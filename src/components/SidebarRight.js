@@ -63,7 +63,7 @@ const SidebarRight = () => {
                 title={item.title}
                 artistsName={item.artistsName}
                 sid={item.sid}
-                style="w-full bg-gray-300 flex item-center shadow-xl p-[10px] gap-[12px] hover:bg-gradient-to-r from-purple-200 to-blue-200 cursor-pointer "
+                style="w-full rounded-md bg-purple-900 flex item-center shadow-xl p-[10px] gap-[12px] hover:bg-purple-800 cursor-pointer "
                 size="w-[50px] h-[50px] rounded-md"
               />
             ))}
@@ -77,19 +77,19 @@ const SidebarRight = () => {
               title={curSongData.title}
               artistsName={curSongData.artistsNames}
               sid={curSongData.encodeId}
-              style="w-full bg-gray-300  flex item-center shadow-xl p-[10px] gap-[12px] hover:bg-gradient-to-r from-purple-200 to-blue-200 cursor-pointer "
+              style="w-full  bg-purple-900 rounded-md flex item-center shadow-xl p-[10px] gap-[12px] hover:bg-gradient-to-r from-purple-200 to-blue-200 cursor-pointer "
               size="w-[50px] h-[50px] rounded-md"
             />
             <div className="flex flex-col text-black pt-[15px] px-2 pb-[5px]">
-              <span className="text-xs">
+              <span className="text-xs text-orange-300">
                 <span>Từ album : </span>
-                <span className="font-semibold text-red-900">
+                <span className="font-semibold text-orange-200">
                   {curSongData?.album?.title.length > 25
                     ? `${curSongData?.album?.title.slice(0, 25)}...`
                     : curSongData?.album?.title}
                 </span>
               </span>
-              <span className="text-sm font-semibold">Tiếp theo</span>
+              <span className="text-sm font-semibold text-orange-300">Tiếp theo</span>
             </div>
             {playlist && (
               <div className="flex flex-col">
@@ -100,7 +100,7 @@ const SidebarRight = () => {
                     title={item.title}
                     artistsName={item.artistsNames}
                     sid={item.encodeId}
-                    style="w-full bg-gray-300 flex item-center shadow-xl p-[10px] gap-[12px] hover:bg-gradient-to-r from-purple-200 to-blue-200 cursor-pointer "
+                    style="w-full bg-purple-900 rounded-md flex item-center shadow-xl p-[10px] gap-[12px] hover:bg-purple-800 to-blue-200 cursor-pointer "
                     size="w-[50px] h-[50px] rounded-md"
                   />
                 ))}

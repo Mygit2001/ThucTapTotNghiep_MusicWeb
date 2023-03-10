@@ -10,7 +10,7 @@ const SearchSongs = () => {
     dispatch(actions.getSearchSongs(searchData?.top?.id));
   }, [searchData]);
   return (
-      <div className="px-[60px]"><Lists /></div>
+      <div className="px-[60px] "><Lists /></div>
   );
 };
 

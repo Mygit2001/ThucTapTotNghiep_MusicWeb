@@ -16,7 +16,7 @@ const Catergory = () => {
   return (
     <div className="mt-12 px-[59px] mb-20">
       <div className="flex items-center justify-between mb-8">
-        <h3 className="text-[20px] font-bold">{catergory?.title}</h3>
+        <h3 className="text-[20px] text-gray-100 font-bold">{catergory?.title}</h3>
         <span className="text-md font-semibold text-blue-700 cursor-pointer hover:text-blue-900">Tất cả</span>
       </div>
       <div className="flex items-center gap-4 text-md font-semibold mb-5">

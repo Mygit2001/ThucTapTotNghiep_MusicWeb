@@ -1,6 +1,6 @@
 import icons from "./icons"
 
-const { MdOutlineLibraryMusic, MdOutlineFeed, TbChartArcs, HiOutlineChartPie, MdOutlineAlbum, MdOutlinePersonalInjury,RiCompassDiscoverFill, RiVipLine } = icons
+const {FcVip, MdOutlineLibraryMusic, MdOutlineFeed, TbChartArcs, HiOutlineChartPie, MdOutlineAlbum, MdOutlinePersonalInjury,RiCompassDiscoverFill, RiVipLine } = icons
 export const sidebarMenu = [
     {
         path: 'personal',
@@ -20,9 +20,14 @@ export const sidebarMenu = [
         icons: <MdOutlineAlbum size={24} />
     },
     {
-        path: 'artistSpotlight/:items/:pid',
+        path: 'artist',
         text: 'Nghệ sĩ',
         icons: <MdOutlinePersonalInjury size={24} />
+    },
+    {
+        path: 'account',
+        text: 'Gói VIP',
+        icons: <FcVip size={24} />
     },
     // {
     //     path: 'follow',

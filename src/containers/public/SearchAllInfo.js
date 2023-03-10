@@ -11,7 +11,7 @@ const SearchAllInfo = () => {
     {searchData ? 
     <div className="w-full flex flex-col px-[60px] pb-[30px] gap-[40px]">
     <div className="flex flex-col mt-6">
-      <h3 className="text-lg font-semibold text-red-600 mb-3">Nổi bật</h3>
+      <h3 className="text-lg font-semibold text-orange-600 mb-3">Nổi bật</h3>
       <div className="flex gap-8">
         {searchData?.top && (
           <div className="p-[10px] flex items-center gap-6 bg-neutral-300 flex-1 rounded-md cursor-pointer">
@@ -43,7 +43,7 @@ const SearchAllInfo = () => {
                 title={item.title}
                 artistsName={item.artistsNames}
                 size="w-[80px] h-[80px]"
-                style= 'w-full flex border-double border-1 border-purple-400 rounded-md shadow-xl p-[10px] items-center gap-[12px]  cursor-pointer hover:bg-gray-300'
+                style= 'w-full flex  rounded-md shadow-xl p-[10px] items-center gap-[12px]  cursor-pointer hover:bg-purple-800'
               />
             </div>
           ))}

@@ -6,7 +6,7 @@ import { FiSearch, FiVolume2, FiVolumeX, FiLogOut } from 'react-icons/fi'
 import { BsThreeDots, BsFillPlayFill, BsPauseFill, BsMusicNoteBeamed, BsDot, BsMusicNoteList } from 'react-icons/bs'
 import { CiRepeat, CiShuffle} from 'react-icons/ci'
 import {RiCompassDiscoverFill, RiVipLine} from 'react-icons/ri'
-import {FcBusinessman} from 'react-icons/fc'
+import {FcBusinessman, FcVip} from 'react-icons/fc'
 const icons = {
     MdOutlineLibraryMusic,
     MdOutlinePersonalInjury,
@@ -37,6 +37,7 @@ const icons = {
     BsDot,
     RiCompassDiscoverFill,
     RiVipLine,
+    FcVip,
     FcBusinessman,
     BsMusicNoteList
 }

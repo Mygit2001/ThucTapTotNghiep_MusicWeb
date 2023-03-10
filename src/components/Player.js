@@ -64,9 +64,7 @@ const Player = ({setIsShowRightSidebar}) => {
         setAudio(new Audio());
         dispatch(actions.play(false));
         setCurrentSecond(0);
-        // toast.warn(res2.data.msg);
-        toast.warn("Bạn cần đăng nhập để nghe các bài hát VIP !");
-        navigate(path.BUY_ACCOUNT)
+        toast.warn("Bạn cần đăng nhập để mua các gói nhạc VIP !");
       }
     };
 
@@ -75,7 +73,7 @@ const Player = ({setIsShowRightSidebar}) => {
 
   useEffect(() => {
     intervalId && clearInterval(intervalId);
-    audio.pause();
+    //audio.pause();
     audio.load();
     if (isPlaying && thumbRef.current) {
       audio.play();

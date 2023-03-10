@@ -15,6 +15,9 @@ module.exports = {
         'transparent' : 'rgba(0,0,0,0.3)',
         'transparent-05' : 'rgba(0,0,0,0.5)'
       },
+      backgroundImage: {
+        'hero-pattern': "url('/src/assets/images/0.svg')"
+      },
       colors: {
         'main-100': '#E7ECEC',
         'main-200': '#DDE4E4',

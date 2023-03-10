@@ -3,8 +3,7 @@ import React from "react";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import {Checkout} from '../../components';
 const initialOptions = {
-  "client-id":
-    "Afxtyt4RQrAi5fYRuzYcLAZy_pgVZWHMzJinb33y-WhbGUMgil-mwNiPiNASaiOp1xbJ5yEnI4WgXUzJ",
+  "client-id": "Afxtyt4RQrAi5fYRuzYcLAZy_pgVZWHMzJinb33y-WhbGUMgil-mwNiPiNASaiOp1xbJ5yEnI4WgXUzJ",
   currency: "USD",
   intent: "capture",
 };

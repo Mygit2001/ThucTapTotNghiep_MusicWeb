@@ -25,10 +25,10 @@ const Header = () => {
             console.log('User is log out')
             return 
           }else {
+            navigate(path.BUY_ACCOUNT)
             const name = user.displayName
             setUser(name)
-            console.log('dang nhap với tên : ', name)
-            const token = await user.getIdToken()
+            // const token = await user.getIdToken()
             // console.log('dang nhap với user token ', user.token)
           }
         });
@@ -67,7 +67,7 @@ const Header = () => {
                     title='Đăng xuất'
                     onClick={() => {
                         logout()
-                        // navigate(path.LOGIN)
+                        navigate(path.HOME)
                     }} 
                     className='text-blue-700 cursor-pointer hover:text-red-900' >
                         <FiLogOut size={20}/>

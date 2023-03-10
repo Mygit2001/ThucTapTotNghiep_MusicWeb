@@ -11,12 +11,13 @@ const Public = () => {
   const [isShowRightSidebar, setIsShowRightSidebar] = useState(true)
 
   return (
-    <div className="w-full relative h-screen flex flex-col bg-main-300">
-      <div className="w-full h-full flex flex-auto">
+    <div className="w-full  relative h-screen flex flex-col bg-[url('https://raw.githubusercontent.com/sona7ns/zingmp3.vn/9272f638028420a1f720918cc734028191f5597d/assets/img/background-theme/backroundThemes/0.svg')]">
+      <div className="w-full h-full flex flex-auto ">
         <div className="w-[240px] h-full flex-none border border-blue-500">
           <SidebarLeft />
         </div>
-        <div className="flex-auto flex flex-col bg-gradient-to-r from-purple-300 to-blue-200 relative">
+        {/* bg-gradient-to-r from-purple-300 to-blue-200 */}
+        <div className="flex-auto flex flex-col  relative">
           {isLoadingListSong && <div className="absolute top-0 bottom-0 right-0 left-0 z-20 bg-transparent-05 flex items-center justify-center">
             <LoadingListSong color = 'white'/>
           </div>}

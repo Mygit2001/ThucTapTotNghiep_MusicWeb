@@ -8,7 +8,7 @@ const Home = () => {
         <>
             {(newEveryday && artist && top100) 
             ?
-            <div className='overflow-y-auto w-full '>
+            <div className="overflow-y-auto w-full  ">
                 <Slider />
                 {newEveryday && <SectionBlock data={newEveryday} className="w-[120px]"/>}
                 {artist &&  <SectionBlock data = {artist} />}

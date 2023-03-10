@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-    background: url('https://media.istockphoto.com/id/1142534564/vector/futuristic-holographic-neon-background.jpg?s=612x612&w=0&k=20&c=6fYCzCu7A_vRnttXMK739RSEP54IUT-5HWtYTlq_syw=')
+   /* https://media.istockphoto.com/id/1142534564/vector/futuristic-holographic-neon-background.jpg?s=612x612&w=0&k=20&c=6fYCzCu7A_vRnttXMK739RSEP54IUT-5HWtYTlq_syw= */
+    background: url('https://raw.githubusercontent.com/sona7ns/zingmp3.vn/9272f638028420a1f720918cc734028191f5597d/assets/img/background-theme/backroundThemes/0.svg')
       top right no-repeat;
    background-position: center;
    background-size: cover;
