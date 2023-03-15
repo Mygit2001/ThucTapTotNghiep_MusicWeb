@@ -25,7 +25,7 @@ const Header = () => {
             console.log('User is log out')
             return 
           }else {
-            navigate(path.BUY_ACCOUNT)
+            // navigate(path.BUY_ACCOUNT)
             const name = user.displayName
             setUser(name)
             // const token = await user.getIdToken()

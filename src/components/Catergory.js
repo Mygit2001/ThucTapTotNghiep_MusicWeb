@@ -42,6 +42,7 @@ const Catergory = () => {
           thumbnail={item.thumbnail}
           title={item.title}
           artistsName={item.artistsNames}
+          sid = {item.encodeId}
           />    
         )
         )}

@@ -63,7 +63,7 @@ const SidebarRight = () => {
                 title={item.title}
                 artistsName={item.artistsName}
                 sid={item.sid}
-                style="w-full rounded-md bg-purple-900 flex item-center shadow-xl p-[10px] gap-[12px] hover:bg-purple-800 cursor-pointer "
+                style="w-full mb-1 shadow-xl rounded-md bg-purple-900 flex item-center shadow-xl p-[10px] gap-[12px] hover:bg-purple-800 cursor-pointer "
                 size="w-[50px] h-[50px] rounded-md"
               />
             ))}
@@ -100,7 +100,7 @@ const SidebarRight = () => {
                     title={item.title}
                     artistsName={item.artistsNames}
                     sid={item.encodeId}
-                    style="w-full bg-purple-900 rounded-md flex item-center shadow-xl p-[10px] gap-[12px] hover:bg-purple-800 cursor-pointer "
+                    style="w-full bg-purple-900 rounded-md mb-1 flex item-center shadow-xl p-[10px] gap-[12px] hover:bg-purple-800 cursor-pointer "
                     size="w-[50px] h-[50px] rounded-md"
                   />
                 ))}

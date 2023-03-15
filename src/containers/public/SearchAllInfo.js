@@ -56,9 +56,9 @@ const SearchAllInfo = () => {
         {searchData?.songs?.map((item) => (
           <div
             key={item.encodeId}
-            className="flex-auto w-[40%] p-2 border-top-width-medium border-double border-1 border-purple-400
+            className="flex-auto w-[40%] p-2 border-top-width-medium border-1 
             rounded-md shadow-xl  items-start items-center gap-[12px]
-            hover:bg-gray-300 cursor-pointer"
+             cursor-pointer"
           >
             <List songData={item} isHideNameAlbum />
           </div>

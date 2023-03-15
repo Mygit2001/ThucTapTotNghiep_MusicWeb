@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useRef} from "react";
 import icons from "../ultis/icons";
 import path from "../ultis/path";
 import * as actions from "../store/actions";
@@ -10,7 +10,7 @@ const Search = () => {
   const [keyword, setkeyword] = useState("");
   const nav = useNavigate();
   const dispatch = useDispatch();
-  
+  const inputRef = useRef();
   const handleSearch = async (e) => {
     if (e.keyCode === 13) {
       dispatch(actions.search(keyword));
@@ -26,7 +26,10 @@ const Search = () => {
     <div className="w-full flex items-center relative">
       {keyword && (
         <span
-          onClick={() => setkeyword("")}
+          onClick={() => {
+            setkeyword("")
+            inputRef.current.focus();
+          } }
           className="absolute cursor-pointer right-[40px] text-gray-500"
         >
           <AiOutlineCloseCircle size={16} />
@@ -36,6 +39,7 @@ const Search = () => {
         <FiSearch size={24} />
       </span>
       <input
+        ref={inputRef}
         type="text"
         className="outline-none px-4 bg-[#DDE4E4] py-2 w-[90%] rounded-r-[20px] h-10 text-gray-500"
         placeholder="Tìm kiếm bài hát, nghệ sĩ,..."

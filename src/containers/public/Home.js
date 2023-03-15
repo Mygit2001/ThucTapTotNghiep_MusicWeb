@@ -6,7 +6,7 @@ const Home = () => {
     const {newEveryday, artist, top100} = useSelector(state => state.app)
     return (
         <>
-            {(newEveryday && artist && top100) 
+            {(newEveryday ) 
             ?
             <div className="overflow-y-auto w-full  ">
                 <Slider />

@@ -13,8 +13,8 @@ const SidebarLeft = () => {
     const navigate = useNavigate()
     return (
         <div className='flex h-full flex-col bg-gradient-to-r from-purple-300 to-pink-200'>
-            <div onClick={() => navigate(path.HOME)} className='w-full h-[70px] py-[15px] px-[25px] flex justify-start items-center cursor-pointer'>
-                <img src="https://img.icons8.com/avantgarde/100/null/rock-music.png" alt="logo" className='w-[150px] h-10' />
+            <div onClick={() => navigate(path.HOME)} className='w-full mb-5 mt-3 h-[70px] py-[15px] px-[25px] flex justify-center items-center cursor-pointer'>
+                <img src="https://static.vecteezy.com/system/resources/previews/009/992/680/original/3d-music-icon-png.png" alt="logo" className='w-[180px] h-[100px]' />
             </div>
             <div className='flex flex-col'>
                 {sidebarMenu.map(item => (

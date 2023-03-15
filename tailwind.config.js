@@ -13,7 +13,8 @@ module.exports = {
         'main-400': '#C0D8D8',
         'main-500': '#0E8080',
         'transparent' : 'rgba(0,0,0,0.3)',
-        'transparent-05' : 'rgba(0,0,0,0.5)'
+        'transparent-05' : 'rgba(0,0,0,0.5)',
+        'transparent-07' : 'rgba(0,0,0,0.7)'
       },
       backgroundImage: {
         'hero-pattern': "url('/src/assets/images/0.svg')"

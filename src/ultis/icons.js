@@ -1,6 +1,6 @@
 import { MdOutlineLibraryMusic, MdOutlineFeed, MdSkipNext, MdSkipPrevious, MdOutlineAlbum, MdOutlinePersonalInjury } from 'react-icons/md'
 import { HiOutlineChartPie, HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-icons/hi'
-import { TbChartArcs, TbRepeatOnce } from 'react-icons/tb'
+import { TbChartArcs, TbRepeatOnce, TbPlaylist } from 'react-icons/tb'
 import { AiOutlineArrowLeft, AiOutlineArrowRight, AiFillHeart, AiOutlineHeart, AiOutlineCloseCircle } from 'react-icons/ai'
 import { FiSearch, FiVolume2, FiVolumeX, FiLogOut } from 'react-icons/fi'
 import { BsThreeDots, BsFillPlayFill, BsPauseFill, BsMusicNoteBeamed, BsDot, BsMusicNoteList } from 'react-icons/bs'
@@ -39,7 +39,8 @@ const icons = {
     RiVipLine,
     FcVip,
     FcBusinessman,
-    BsMusicNoteList
+    BsMusicNoteList,
+    TbPlaylist
 }
 
 export default icons
