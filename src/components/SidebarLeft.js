@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import path from '../ultis/path'
 
-const notActiveStyle = 'py-3 px-[25px] font-bold text-[#32323D] text-[13px] flex gap-[12px] items-center  my-1 bg-orange-400'
-const activeStyle = 'py-3 px-[25px] font-bold text-[#0F7070] text-[13px] flex gap-[12px] items-center  my-1 bg-orange-500'
+const notActiveStyle = 'w-[180px] text-center h-[80px] rounded-md py-3 px-[25px] font-bold text-[#32323D] text-[15px] flex gap-[12px] items-center  my-1 bg-orange-400'
+const activeStyle = 'w-[180px] text-center h-[100px] rounded-md py-3 px-[25px] font-bold text-[#0F7070] text-[15px] flex gap-[12px] items-center  my-1 bg-orange-500'
 
 const SidebarLeft = () => {
 
@@ -18,15 +18,17 @@ const SidebarLeft = () => {
             </div>
             <div className='flex flex-col'>
                 {sidebarMenu.map(item => (
-                    <NavLink
-                        to={item.path}
-                        key={item.path}
-                        end={item.end}
-                        className={({ isActive }) => isActive ? activeStyle : notActiveStyle } 
-                    >
-                        {item.icons}
-                        <span>{item.text}</span>
-                    </NavLink>
+                   <div className='flex items-center justify-center'>
+                        <NavLink
+                            to={item.path}
+                            key={item.path}
+                            end={item.end}
+                            className={({ isActive }) => isActive ? activeStyle : notActiveStyle } 
+                        >
+                            {item.icons}
+                            <span>{item.text}</span>
+                        </NavLink>
+                   </div>
                 ))}
             </div>
         </div>

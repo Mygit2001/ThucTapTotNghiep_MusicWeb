@@ -64,7 +64,7 @@ const Player = ({setIsShowRightSidebar}) => {
         setAudio(new Audio());
         dispatch(actions.play(false));
         setCurrentSecond(0);
-        toast.warn("Bạn cần đăng nhập để mua các gói nhạc VIP !");
+        // toast.warn("Bạn cần đăng nhập để mua các gói nhạc VIP !");
       }
     };
 
