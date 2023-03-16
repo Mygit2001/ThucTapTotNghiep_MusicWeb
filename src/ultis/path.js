@@ -12,7 +12,8 @@ const path = {
     SONG : 'bai-hat',
     ALBUM__SEARCH: 'playlist',
     ARTIST__PAGE : ':artist',
-    BUY_ACCOUNT : 'account'
+    BUY_ACCOUNT : 'account',
+    DOWN_MP3_FROM_YT : 'download-mp3-frYoutube'
 }
 
 export default path

@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Album, ArtistPage, Home, Login,Register, Personal, Public, Search, SearchAlbum, SearchAllInfo, SearchSongs, BuyAccount } from './containers/public/';
+import { Album, ArtistPage, Home, Login,Register, Personal, Public, Search, SearchAlbum, SearchAllInfo, SearchSongs, BuyAccount, DownMp3FromYoutube } from './containers/public/';
 import * as actions from './store/actions';
 import path from './ultis/path';
 
@@ -26,6 +26,7 @@ function App() {
             <Route path={path.ALBUM__TITLE__PID} element={<Album />} />
             <Route path={path.PLAYLIST__TITLE__PID} element={<Album />} />
             <Route path={path.BUY_ACCOUNT} element={<BuyAccount />} />
+            <Route path={path.DOWN_MP3_FROM_YT} element={<DownMp3FromYoutube />} />
             <Route path={path.ARTIST__PAGE} element={<ArtistPage />} />
             <Route path={path.SEARCH} element={<Search />} >
                <Route path={path.ALL} element={<SearchAllInfo />} />

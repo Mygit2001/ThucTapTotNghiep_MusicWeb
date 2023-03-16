@@ -14,8 +14,8 @@ export const sidebarMenu = [
         icons: < MdOutlineLibraryMusic size={24} />
     },
     {
-        path: 'album/:title/:pid',
-        text: 'Album',
+        path: 'download-mp3-frYoutube',
+        text: 'Tải nhạc từ Youtube',
         end: true,
         icons: <MdOutlineAlbum size={24} />
     },
