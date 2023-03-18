@@ -15,7 +15,7 @@ const appReducer = (state = initState, action) => {
             return {
                 ...state,
                 banner: action.homeData?.find(item => item.sectionType === 'banner')?.items || null,
-                newEveryday: {...action.homeData?.find(item => item.sectionId === 'hAutoTheme2'), title : 'Nhạc mới'} || {},
+                newEveryday: {...action.homeData?.find(item => item.sectionId === 'hNewrelease'), title : 'Nhạc mới'} || {},
                 artist: {...action.homeData?.find(item => item.sectionId === 'hArtistTheme'), title : 'Nghệ sĩ'} || {},
                 catergory: {...action.homeData?.find(item => item.sectionType === 'new-release'), title : 'Thể loại'} || {},
                 top100: action.homeData?.find(item => item.sectionId === 'h100') || {},

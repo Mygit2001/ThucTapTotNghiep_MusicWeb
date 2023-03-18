@@ -6,11 +6,11 @@ const Home = () => {
     const {newEveryday, artist, top100} = useSelector(state => state.app)
     return (
         <>
-            {(newEveryday ) 
+            {(newEveryday && artist && top100) 
             ?
             <div className="overflow-y-auto w-full  ">
                 <Slider />
-                {/* {newEveryday && <SectionBlock data={newEveryday} className="w-[120px]"/>} */}
+                {newEveryday && <SectionBlock data={newEveryday} />}
                 {artist &&  <SectionBlock data = {artist} />}
                 <Catergory />
                 {top100 && <SectionBlock data={top100} />}

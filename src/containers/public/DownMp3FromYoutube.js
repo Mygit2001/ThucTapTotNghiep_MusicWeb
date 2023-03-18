@@ -4,6 +4,7 @@ import { youtube_parser } from "../../components/getUrl";
 const DownMp3FromYoutube = () => {
   const inputRef = useRef();
   const [urlResult, setUrlResult] = useState(null);
+  const [titleResult, setTitleResult] = useState(null);
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log(inputRef.current.value);
@@ -21,12 +22,17 @@ const DownMp3FromYoutube = () => {
       },
     };
     axios(options)
-      .then((res) => setUrlResult(res.data.link))
+      .then((res) => {
+        const linkVideo = res.data.link;
+        setUrlResult(linkVideo)
+        const titleVideo = res.data.title;
+        setTitleResult(titleVideo);
+      })
       .catch((err) => console.log(err));
     inputRef.current.value = "";
   };
   return (
-    <div className=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-400 rounded-md w-[70%] m-auto h-[200px] flex flex-col justify-center items-center gap-4 mt-[150px]">
+    <div className=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-400 rounded-md w-[70%] m-auto h-[400px] flex flex-col justify-center items-center gap-4 mt-[100px]">
       <h1 className="text-[30px] font-bold text-white ">
         Tải nhạc Mp3 từ Youtube
       </h1>
@@ -42,11 +48,12 @@ const DownMp3FromYoutube = () => {
         />
         <button
           type="submit"
-          className="w-[100px] h-[30px] rounded-full bg-[#0f593e] hover:bg-[#0e553b] text-white font-bold border-none outline-none"
+          className="transition ease-in-out delay-50 w-[100px] h-[30px] rounded-full bg-[#0f593e] hover:bg-[#ad1ead] text-white font-bold border-none outline-none"
         >
           Tìm
         </button>
       </form>
+      <div className="text-red-900 font-semibold text-[20px]">{titleResult?.split("[")[0]}</div>
       {urlResult ? (
         <a
           target="_blank"

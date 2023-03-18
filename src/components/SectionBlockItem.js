@@ -19,7 +19,7 @@ const SectionBlockItem = ({ link, title, thumbnailM }) => {
       onClick={() => {
         nav(link?.split(".")[0]);
       }}
-      className="flex flex-col gap-3 flex-auto w-1/5 text-sm cursor-pointer "
+      className="flex flex-col  gap-3 flex-auto w-1/5 text-sm cursor-pointer "
     >
       <div
         onMouseEnter={handleHover}
@@ -39,8 +39,8 @@ const SectionBlockItem = ({ link, title, thumbnailM }) => {
         />
       </div>
       <span className="flex flex-col text-center">
-        <span className="font-semibold text-orange-500 hover:text-orange-300">
-          {title}
+        <span className="font-semibold text-orange-500 hover:text-orange-300" title={title}>
+        {title?.length > 30 ? `${title.slice(0, 30)}...` : title}
         </span>
         {/* <span >{item.sortDescription?.length >= 40 ? `${item.sortDescription?.slice(0, 40)}...` : item.sortDescription}</span> */}
       </span>

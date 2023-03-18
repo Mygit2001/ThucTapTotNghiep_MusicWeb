@@ -1,4 +1,4 @@
-import { MdOutlineLibraryMusic, MdOutlineFeed, MdSkipNext, MdSkipPrevious, MdOutlineAlbum, MdOutlinePersonalInjury } from 'react-icons/md'
+import { MdOutlineLibraryMusic, MdOutlineFeed, MdSkipNext, MdSkipPrevious, MdOutlineAlbum, MdOutlinePersonalInjury, MdDownloading } from 'react-icons/md'
 import { HiOutlineChartPie, HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-icons/hi'
 import { TbChartArcs, TbRepeatOnce, TbPlaylist } from 'react-icons/tb'
 import { AiOutlineArrowLeft, AiOutlineArrowRight, AiFillHeart, AiOutlineHeart, AiOutlineCloseCircle } from 'react-icons/ai'
@@ -40,7 +40,8 @@ const icons = {
     FcVip,
     FcBusinessman,
     BsMusicNoteList,
-    TbPlaylist
+    TbPlaylist,
+    MdDownloading
 }
 
 export default icons

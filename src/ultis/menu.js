@@ -1,6 +1,6 @@
 import icons from "./icons"
 
-const {FcVip, MdOutlineLibraryMusic, MdOutlineFeed, TbChartArcs, HiOutlineChartPie, MdOutlineAlbum, MdOutlinePersonalInjury,RiCompassDiscoverFill, RiVipLine } = icons
+const {FcVip, MdOutlineLibraryMusic, MdOutlineFeed, TbChartArcs, HiOutlineChartPie, MdDownloading, MdOutlinePersonalInjury,RiCompassDiscoverFill, RiVipLine } = icons
 export const sidebarMenu = [
     {
         path: 'personal',
@@ -17,7 +17,7 @@ export const sidebarMenu = [
         path: 'download-mp3-frYoutube',
         text: 'Tải nhạc từ Youtube',
         end: true,
-        icons: <MdOutlineAlbum size={24} />
+        icons: <MdDownloading size={35} />
     },
     {
         path: 'artist',
