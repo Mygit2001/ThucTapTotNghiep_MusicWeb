@@ -59,7 +59,7 @@ const DownMp3FromYoutube = () => {
           target="_blank"
           href={urlResult}
           rel="noreferrer"
-          className="text-white font-semibold underline"
+          className="text-white font-semibold underline hover:text-[#0f593e]"
         >
           Tải nhạc Mp3
         </a>

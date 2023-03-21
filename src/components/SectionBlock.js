@@ -12,7 +12,7 @@ const SectionBlock = ({ data }) => {
           Tất cả
         </span>
       </div>
-      <div className="flex items-center justify-between gap-[15px]">
+      <div className="flex items-start justify-between gap-[28px]">
         {data &&
           data?.items?.length > 0 &&
           data.items

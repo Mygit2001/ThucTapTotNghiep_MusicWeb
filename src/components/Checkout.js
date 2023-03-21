@@ -63,7 +63,7 @@ const Checkout = () => {
               </select>
             </div>
             <button className="text-[#003087] w-[200px] py-[5px] rounded-[4px] px-3 bg-[#ffc439] mb-3 font-semibold hover:opacity-90">
-              Mua gói
+              Thanh toán
             </button>
 
             <PayPalButtons
@@ -88,7 +88,7 @@ const Checkout = () => {
               </select>
             </div>
             <button className="text-[#003087] w-[200px] py-[5px] rounded-[4px] px-3 bg-[#ffc439] mb-3 font-semibold hover:opacity-90">
-              Mua gói
+            Thanh toán
             </button>
 
             <PayPalButtons
@@ -113,7 +113,7 @@ const Checkout = () => {
               </select>
             </div>
             <button className="text-[#003087] w-[200px] py-[5px] rounded-[4px] px-3 bg-[#ffc439] mb-3 font-semibold hover:opacity-90">
-              Mua gói
+            Thanh toán
             </button>
 
             <PayPalButtons

@@ -8,6 +8,7 @@ import path from '../ultis/path'
 import { toast } from "react-toastify";
 import moment from "moment";
 import { useNavigate } from "react-router-dom";
+
 const {
   AiOutlineHeart,
   // AiFillHeart,
@@ -64,10 +65,9 @@ const Player = ({setIsShowRightSidebar}) => {
         setAudio(new Audio());
         dispatch(actions.play(false));
         setCurrentSecond(0);
-        // toast.warn("Bạn cần đăng nhập để mua các gói nhạc VIP !");
+        toast.warn("Bạn cần mua các gói nhạc VIP !");
       }
     };
-
     fetchDetailSong();
   }, [curSongId]);
 
