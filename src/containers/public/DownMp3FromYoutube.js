@@ -53,7 +53,7 @@ const DownMp3FromYoutube = () => {
           Tìm
         </button>
       </form>
-      <div className="text-red-900 font-semibold text-[20px]">{titleResult?.split("[")[0]}</div>
+      <div className="text-red-900 font-semibold text-[20px]">{titleResult?.split("[")[0]} </div>
       {urlResult ? (
         <a
           target="_blank"
